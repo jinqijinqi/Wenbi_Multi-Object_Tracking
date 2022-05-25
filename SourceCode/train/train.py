@@ -1,0 +1,2 @@
+class train:
+    pass
