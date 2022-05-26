@@ -1,3 +1,10 @@
+Author: James,
+Email: xxx@gmail.com
+Affiliation: in google.com
+supervisor: Jin Qi
+Date: 5/26/2022
+note: this work was done while I pursued my bachelor/master degree in Jin Qi's AIML Lab in UESTC
+
 # streamlit-fastapi-model-serving
 
 Simple example of usage of streamlit and FastAPI for ML model serving described on [this blogpost](https://davidefiocco.github.io/streamlit-fastapi-ml-serving) and [PyConES 2020 video](https://www.youtube.com/watch?v=IvHCxycjeR0).
