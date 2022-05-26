@@ -11,6 +11,11 @@ To run the example in a machine running Docker and docker-compose, run:
     docker-compose build
     docker-compose up
 
+in the first time, above step would download model from (https://pytorch.org/hub/pytorch_vision_deeplabv3_resnet101/). to avoid to download the model from potential slow website pytorch.org in china, you can also download model deeplabv3_resnet101_coco-586e9e4e.pth from baidu: https://pan.baidu.com/s/1f7-m6E7Z12ABaHSDexZfoA?pwd=5n3i. then put the model in the directory ./ImageSegmentation/Deployment/fastapi/model/. then run:
+
+    docker-compose build
+    docker-compose up
+
 To visit the FastAPI documentation of the resulting service, visit http://localhost:8000 with a web browser.  
 To visit the streamlit UI, visit http://localhost:8501.
 
