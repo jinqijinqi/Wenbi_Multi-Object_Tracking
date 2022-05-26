@@ -2,7 +2,9 @@ Author: James,
 
 Email: xxx@gmail.com
 
-Affiliation: in google.com
+Current Affiliation: UESTC
+
+Future Affiliation:  Google Company/ Stanford University
 
 supervisor: Jin Qi
 
