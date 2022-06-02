@@ -1,0 +1,5 @@
+# ninja log v5
+2	20934	1646289284186113257	/root/data/lwb/FairMOT/src/lib/models/networks/build/temp.linux-x86_64-3.8/QuadtreeAttention/src/score_computation.o	555db1f5c1af5cb6
+3	43583	1646289306842294187	/root/data/lwb/FairMOT/src/lib/models/networks/build/temp.linux-x86_64-3.8/QuadtreeAttention/src/score_computation_kernal.o	7514a7234ce52005
+2	20151	1646289327862460063	/root/data/lwb/FairMOT/src/lib/models/networks/build/temp.linux-x86_64-3.8/QuadtreeAttention/src/value_aggregation.o	7593f889db1b3fa
+2	39082	1646289346798607923	/root/data/lwb/FairMOT/src/lib/models/networks/build/temp.linux-x86_64-3.8/QuadtreeAttention/src/value_aggregation_kernel.o	5db6ad90f622adf8

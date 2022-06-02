@@ -1,0 +1,78 @@
+FROM nvidia/cuda:10.2-base
+
+CMD nvidia-smi
+
+RUN chsh -s /bin/bash
+SHELL ["/bin/bash", "-c"]
+
+RUN gpg --keyserver keyserver.ubuntu.com --recv A4B469963BF863CC
+RUN gpg --export --armor A4B469963BF863CC | apt-key add -
+
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+
+RUN apt-get update
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get install -y software-properties-common wget apt-utils patchelf git libprotobuf-dev protobuf-compiler cmake \
+    bzip2 ca-certificates libglib2.0-0 libxext6 libsm6 libxrender1 mercurial subversion libopenmpi-dev && \
+    apt-get clean
+RUN unattended-upgrade
+RUN apt-get autoremove -y
+
+RUN add-apt-repository ppa:deadsnakes/ppa && apt-get update
+RUN apt-get install python3.8 -y
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
+RUN update-alternatives --set python /usr/bin/python3.8
+RUN apt install python3.8-venv python3-venv -y && apt-get update
+RUN apt-get install python3-pip -y
+RUN python -m pip install --upgrade pip
+
+RUN pip install torch==1.7.0 torchvision==0.8.0
+
+RUN mkdir /fastapi
+
+COPY requirements.txt /fastapi
+
+WORKDIR /fastapi
+
+RUN pip install cython
+
+RUN pip install wheel
+
+RUN pip install numpy
+
+RUN apt-get install gcc
+
+RUN apt-get install libfreetype6-dev -y
+RUN apt-get install pkg-config -y
+
+RUN apt install libpython3.8-dev -y
+
+RUN pip install lap
+
+RUN pip install -r requirements.txt 
+
+COPY . /fastapi
+
+WORKDIR  /fastapi/DCNv2-pytorch_1.7
+
+RUN apt-get update && apt-get install libtinfo5
+
+RUN  bash make.sh
+
+WORKDIR ../
+
+
+RUN add-apt-repository ppa:savoury1/build-tools
+RUN add-apt-repository ppa:savoury1/backports
+RUN add-apt-repository ppa:savoury1/fonts
+RUN add-apt-repository ppa:savoury1/graphics
+RUN add-apt-repository ppa:savoury1/multimedia
+RUN add-apt-repository ppa:savoury1/ffmpeg4
+RUN apt-get update
+RUN apt-get upgrade  -y && apt-get dist-upgrade -y
+RUN apt-get install ffmpeg -y
+
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "ui.py","mot"]
