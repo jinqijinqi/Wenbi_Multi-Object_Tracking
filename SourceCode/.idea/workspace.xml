@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cbe30361-6408-4148-b8d6-436e4d98eba7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/IMG_2884.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/IMG_2884.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/demo-data/IMG_2884.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/fastapi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../deployment/fastapi/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/fastapi/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../deployment/fastapi/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/fastapi/segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../deployment/fastapi/segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/fastapi/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../deployment/fastapi/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/streamlit/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/streamlit/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployment/streamlit/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/paper/SparseBayesBlindDeconvolution.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/ppt/SparseBayesBlindDeconvolution.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/thesis/SparseBayesBlindDeconvolution.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2A1KnvMMe8Cq2ewjOzOoVQjijLJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbe30361-6408-4148-b8d6-436e4d98eba7" name="Default Changelist" comment="" />
+      <created>1654171828486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654171828486</updated>
+      <workItem from="1654171830096" duration="93000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
