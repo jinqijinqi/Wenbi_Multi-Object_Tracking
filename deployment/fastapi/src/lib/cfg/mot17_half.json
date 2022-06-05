@@ -1,0 +1,15 @@
+{
+    "root":"/root/data/lwb/FairMOT/datasets",
+    "train":
+    {
+        "mot17":"/root/data/lwb/FairMOT/src/data/mot17.half"
+    },
+    "test_emb":
+    {
+        "mot17":"/root/data/lwb/FairMOT/src/data/mot17.emb"
+    },
+    "test":
+    {
+        "mot17":"/root/data/lwb/FairMOT/src/data/mot17.val"
+    }
+}

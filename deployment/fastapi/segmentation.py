@@ -3,14 +3,14 @@ import io
 import torch
 from PIL import Image
 from torchvision import transforms
+import torchvision
 
 # adapted from https://pytorch.org/hub/pytorch_vision_deeplabv3_resnet101/
 
 
 def get_segmentator():
 
-    model = torch.hub.load(
-        "pytorch/vision:v0.6.0", "deeplabv3_resnet101", pretrained=True
+    model = torchvision.models.segmentation.deeplabv3_resnet101(pretrained=True
     )
     model.eval()
 

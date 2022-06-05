@@ -1,0 +1,19 @@
+services:
+  fastapi:
+    build: fastapi/
+    ports: 
+        - 8501:8501
+    networks:
+      - deploy_network
+    container_name: fastapi
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+networks:
+  deploy_network:
+    driver: bridge

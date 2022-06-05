@@ -170,6 +170,9 @@ python gen_labels_20.py
 生成 2DMOT15 和 MOT20 的标签。2DMOT15的seqinfo.ini文件可以在[[Google\]](https://drive.google.com/open?id=1kJYySZy7wyETH4fKMzgJrYUrTfxKlN1w)、[[Baidu\]下载，代码：8o0w](https://pan.baidu.com/s/1zb5tBW7-YTzWOXpd9IzS0g)。
 
 
+训练及最终权重下载：链接：[[Baidu\]下载，代码：6666](https://pan.baidu.com/s/1G7ChrWtvcZTtMJ94LSFd-Q)。 并将权重放在models文件夹中。
+
+
 #### Training
 * Download the training data
 * Change the dataset root directory 'root' in src/lib/cfg/data.json and 'data_dir' in src/lib/opts.py
